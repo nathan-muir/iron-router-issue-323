@@ -15,8 +15,18 @@ Test:
 
 Result:
 
+going from `/` to `/content/a/1`
+
   * sets the layout to the new routes layout
   * none of the yields are rendered
+
+going from `/content/a/1` to `/content/a/2`
+
+  * same as previous
+
+going from `/content/a/2` to `/content/b/1`
+
+  * same as previous
 
 Expected Result:
 
