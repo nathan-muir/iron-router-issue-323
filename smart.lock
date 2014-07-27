@@ -7,15 +7,15 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {
-        "git": "https://github.com/EventedMind/iron-router",
-        "branch": "devel"
+        "git": "https://github.com/nathan-muir/iron-router",
+        "branch": "devel-0.8.3-onEachRun-onBeforeSwitch-waitOn"
       }
     },
     "packages": {
       "iron-router": {
-        "git": "https://github.com/EventedMind/iron-router",
-        "branch": "devel",
-        "commit": "909a865992887255dcbe62e3b69b6a53f3333296"
+        "git": "https://github.com/nathan-muir/iron-router",
+        "branch": "devel-0.8.3-onEachRun-onBeforeSwitch-waitOn",
+        "commit": "2182d5b648af06e303b4d9ec9e0cc64bded48c13"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

@@ -49,7 +49,7 @@ if (Meteor.isClient) {
           "data-source": "content-a-1"
         }
       },
-      onBeforeAction: function(pause){
+      onBeforeSwitch: function(pause){
         if (!this.ready()){
           console.log("DummySubscriptionHandle not ready, pausing loading");
           pause();
@@ -73,7 +73,7 @@ if (Meteor.isClient) {
           "data-source": "content-a-2"
         }
       },
-      onBeforeAction: function(pause){
+      onBeforeSwitch: function(pause){
         if (!this.ready()){
           console.log("DummySubscriptionHandle not ready, pausing loading");
           pause();
@@ -99,7 +99,7 @@ if (Meteor.isClient) {
           "data-source": "content-b-1"
         }
       },
-      onBeforeAction: function(pause){
+      onBeforeSwitch: function(pause){
         if (!this.ready()){
           console.log("DummySubscriptionHandle not ready, pausing loading");
           pause();
@@ -123,7 +123,7 @@ if (Meteor.isClient) {
           "data-source": "content-b-2"
         }
       },
-      onBeforeAction: function(pause){
+      onBeforeSwitch: function(pause){
         if (!this.ready()){
           console.log("DummySubscriptionHandle not ready, pausing loading");
           pause();

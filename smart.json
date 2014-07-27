@@ -5,8 +5,8 @@
   },
   "packages": {
     "iron-router": {
-        "git": "https://github.com/EventedMind/iron-router",
-        "branch" : "devel"
+        "git": "https://github.com/nathan-muir/iron-router",
+        "branch" : "devel-0.8.3-onEachRun-onBeforeSwitch-waitOn"
     }
   }
 }
