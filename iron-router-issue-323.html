@@ -1,0 +1,58 @@
+<head>
+  <title>iron-router-issue-323</title>
+</head>
+
+<body></body>
+
+<template name="noLayout">
+  {{> yield}}
+</template>
+
+<template name="layoutA">
+  <h1>LayoutA!</h1>
+
+  <div>
+    yield: {{> yield}}
+  </div>
+
+  <div>
+    shared yield: {{> yield region="navigation"}}
+  </div>
+
+  <div>
+    layoutA yield: {{> yield region="layoutAYield"}}
+  </div>
+</template>
+
+<template name="layoutB">
+  <h1>LayoutB!</h1>
+  <div>
+    yield: {{> yield}}
+  </div>
+
+  <div>
+    shared yield: {{> yield region="navigation"}}
+  </div>
+
+  <div>
+    layoutB yield: {{> yield region="layoutBYield"}}
+  </div>
+</template>
+
+
+<template name="contentA1">Content A1!, {{prettyData}} </template>
+<template name="contentA2">Content A2!, {{prettyData}}</template>
+<template name="contentASpecial">Special Yield for layout A</template>
+
+<template name="contentB1">Content B1!, {{prettyData}} </template>
+<template name="contentB2">Content B2!, {{prettyData}}</template>
+<template name="contentBSpecial">Special Yield for layout B</template>
+
+<template name="navigation">
+  <ul>
+    <li><a href="/content/a/1">contentA1</a></li>
+    <li><a href="/content/a/2">contentA2</a></li>
+    <li><a href="/content/b/1">contentB1</a></li>
+    <li><a href="/content/b/2">contentB2</a></li>
+  </ul>
+</template>

@@ -1,0 +1,13 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "tag": "release/0.8.3-rc5"
+  },
+  "packages": {
+    "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router",
+        "branch" : "devel"
+    }
+  }
+}
+
